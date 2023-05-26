@@ -13,7 +13,7 @@
                         <th>Price</th>
                     </tr>
                     <xsl:for-each select="catalog/cd">
-                        <xsl:if test="starts-with(@country, 'U')">
+                        <xsl:if test="not(starts-with(artist, 'F')) and (price &gt; 200)">
                             <tr>
                                 <td><xsl:value-of select="@country" /></td>
                                 <td><xsl:value-of select="title" /></td>
