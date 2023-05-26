@@ -12,15 +12,13 @@
                         <th>Artist</th>
                         <th>Price</th>
                     </tr>
-                    <xsl:for-each select="catalog/cd">
-                        <xsl:if test="@country='India' or @country='UK'">
-                            <tr>
-                                <td><xsl:value-of select="@country" /></td>
-                                <td><xsl:value-of select="title" /></td>
-                                <td><xsl:value-of select="artist" /></td>
-                                <td><xsl:value-of select="price" /></td>
-                            </tr>
-                        </xsl:if>
+                    <xsl:for-each select="catalog/cd[(@country='India') or (@country='UK')]">
+                        <tr>
+                            <td><xsl:value-of select="@country" /></td>
+                            <td><xsl:value-of select="title" /></td>
+                            <td><xsl:value-of select="artist" /></td>
+                            <td><xsl:value-of select="price" /></td>
+                        </tr>
                     </xsl:for-each>
                 </table>
             </body>
