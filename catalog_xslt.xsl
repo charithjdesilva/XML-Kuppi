@@ -22,6 +22,14 @@
                                     <td><xsl:value-of select="price" /></td>
                                 </tr>
                             </xsl:when>
+                            <xsl:otherwise>
+                                <tr bgcolor="yellow">
+                                    <td><xsl:value-of select="@country" /></td>
+                                    <td><xsl:value-of select="title" /></td>
+                                    <td><xsl:value-of select="artist" /></td>
+                                    <td><xsl:value-of select="price" /></td>
+                                </tr>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each>
                 </table>
