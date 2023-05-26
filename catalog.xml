@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet type="text/xsl" href="catalog_xslt.xsl"?>
+
+<catalog>
+    <cd country="UK">
+        <title>Dark Side of the Moon</title>
+        <artist>Floyd</artist>
+        <price>100</price>
+        <!-- This is a comment in both HTML and XML -->
+    </cd>
+    <cd country="USA">
+        <title>Titanic</title>
+        <artist>Jack</artist>
+        <price>275</price>
+    </cd>
+    <cd country="India">
+        <title>Kuch Kuch Hotha He</title>
+        <artist>Sharuk</artist>
+        <price>325</price>
+    </cd>
+    <cd country="Sri Lanka">
+        <title>Ganga Addara</title>
+        <artist>Wije</artist>
+        <price>125</price>
+    </cd>
+</catalog>
